@@ -1,0 +1,16 @@
+.search{
+  &-no-results{
+    .search{
+      &-form{
+        display: flex;
+        label{
+          width: calc(100% - 108px);
+          max-width: 500px;
+        }
+      }
+      &-field{
+        margin: 0;
+      }
+    }
+  }
+}

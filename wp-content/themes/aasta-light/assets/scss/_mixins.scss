@@ -1,0 +1,49 @@
+//mixin
+@mixin transition($property: all, $duration: .2s, $timing: linear, $delay: 0s){
+  transition: $property $duration $timing $delay;
+}
+@mixin bold-shadow($blur:0.5, $color:#006e6b){
+  text-shadow: 0 0 $blur + px $color,  0 0 $blur + px $color;
+  @-moz-document url-prefix(){
+    text-shadow: 0 0 0 $color,  0 0 0 $color;
+  }
+}
+// Media Queries Min Width
+
+@mixin min-w($width) {
+  @media screen and (min-width: $width + px) { @content; }
+}
+
+// Media Queries Max Width
+
+@mixin max-w($width) {
+  @media screen and (max-width: $width + px) { @content; }
+}
+
+// Media Queries Max Min Width
+
+@mixin max-min-w($max-width, $min-width) {
+  @media screen and (max-width: $max-width + px) and (min-width: $min-width + px) { @content; }
+}
+
+// Fluid font size
+// $f-min - min font size
+// $f-max - max font size
+// $w-min - min window width
+// $w-max - max window width
+// $fallback - default font size for old browsers support
+// $units - measure units (e.x. px, em, rem, vw)
+@mixin fluid-font($f-min, $f-max, $w-min, $w-max, $fallback: false, $units: px) {
+
+  font-size: $f-min + $units;
+
+  @media (min-width: $w-min + $units) {
+    @if ($fallback) {
+      font-size: $fallback;
+    }
+    font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units);
+  }
+  @media (min-width: $w-max + $units) {
+    font-size: $f-max + $units;
+  }
+}

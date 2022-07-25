@@ -1,0 +1,38 @@
+.post{
+  &-item{
+    margin-bottom: 15px;
+    .item{
+      &-img{
+        height: 180px;
+        width: 100%;
+        overflow: hidden;
+        background-color: aliceblue;
+        position: relative;
+        z-index: 0;
+        @include max-w($media-lg){
+          height: calc((100vw - 80px)/3 * 0.6);
+        }
+        @include max-w($media-sm){
+          height: auto;
+        }
+        &:before{
+          content: "no image";
+          position: absolute;
+          z-index: -1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          font-size: 23px;
+          color: #c6c7c9;
+        }
+        img{
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,18 @@
+// Кнопки
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  outline: 0 none;
+  border: 0 none;
+  border-radius: 0;
+  padding: 8px 25px;
+  background-color: #000;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+button, input[type=submit]{
+  @extend .btn;
+}

@@ -1,0 +1,17 @@
+.error-404{
+  text-align: center;
+    .page-search{
+      padding: 30px 0;
+      form{
+        display: flex;
+        justify-content: center;
+      }
+      .search-field{
+        margin: 0;
+      }
+    }
+  h1{
+    @include fluid-font(100, 332, $media-xs, $media-lg);
+    margin: 0;
+  }
+}

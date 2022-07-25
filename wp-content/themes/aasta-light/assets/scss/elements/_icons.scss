@@ -1,0 +1,10 @@
+.icon{
+  width: 30px;
+  height: 30px;
+  &-hamburger{
+    background-image: url("../images/icon-hamburger.svg");
+  }
+  &-close{
+    background-image: url("../images/icon-close.svg");
+  }
+}

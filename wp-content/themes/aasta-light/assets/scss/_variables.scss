@@ -1,0 +1,33 @@
+//  Color
+
+$body-bg: #fff;
+$text-color: #333;
+$main-header-bg: lemonchiffon;
+$main-footer-bg: lemonchiffon;
+$main-menu-bg: lemonchiffon;
+// Color link
+
+$link-color: #55b3f3;
+$link-color--hover: darken($link-color, 20%);
+
+//  Typography
+
+$font-family: 'Roboto', Helvetica, Arial, sans-serif;
+// $font-family--helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$font-size: 14px;
+$font-weight: 400; // Regular
+$line-height: 1.2;
+
+// Width container
+
+$container-padding: 15px;
+$container-width: 1170px + $container-padding * 2;
+
+//  Media query
+
+ $media-xs: 480;
+ $media-sm: 768;
+ $media-md: 992;
+ $media-lg: 1200;
+ $media-xl: 1440;

@@ -1,0 +1,26 @@
+//  import files
+
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'base';
+@import 'typography';
+
+@import 'elements/form-elements';
+@import 'elements/buttons';
+@import 'elements/icons';
+@import 'elements/logo';
+
+@import 'sections/header';
+@import 'sections/footer';
+@import 'sections/menu';
+@import 'sections/aside';
+@import 'sections/grid-posts';
+@import 'sections/post-item';
+@import 'sections/pagination';
+
+@import 'pages/home';
+@import 'pages/author';
+@import "pages/tag";
+@import "pages/search";
+@import 'pages/404';

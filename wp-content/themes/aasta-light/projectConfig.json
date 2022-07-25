@@ -1,0 +1,7 @@
+{
+  "devDomain": "https://invitae.loc",
+  "srcScripts": [
+    "./assets/scripts/main.js",
+    "./assets/scripts/functions.js"
+  ]
+}

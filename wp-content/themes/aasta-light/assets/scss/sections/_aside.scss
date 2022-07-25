@@ -1,0 +1,38 @@
+.aside{
+  padding: 20px;
+  .wp-block-search{
+    &__inside-wrapper{
+      display: flex;
+      input, button{
+        margin: 0;
+      }
+      button{
+        @extend button;
+      }
+    }
+  }
+}
+.main{
+  &-aside{
+    .container{
+      display: flex;
+      @include max-w($media-md){
+        flex-direction: column;
+      }
+    }
+    .page{
+      &-content{
+        width: calc(100% - 300px);
+        @include max-w($media-md){
+          width: 100%;
+        }
+      }
+    }
+    aside{
+      width: 300px;
+      @include max-w($media-md){
+        width: 100%;
+      }
+    }
+  }
+}

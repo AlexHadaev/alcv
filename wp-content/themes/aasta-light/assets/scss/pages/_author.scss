@@ -1,0 +1,18 @@
+.author{
+  &-container{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    grid-gap: 15px;
+    @include max-w($media-sm){
+      grid-template-columns: 1fr;
+    }
+  }
+  &-img{
+    img{
+      border: 1px solid #cccfd1;
+    }
+  }
+  .main-author{
+    padding: 30px 0;
+  }
+}
